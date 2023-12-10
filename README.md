@@ -42,11 +42,11 @@ pip install -r requirements.txt
 2. ###### Django setup 
 ```bash 
 # install the required packages for the django
-python -m pip install Django 
+python -m pip install Django djangorestframework
 # or 
-pip install django
-pip install djangorestframework
-# createapp 
+pip install django djangorestframework
+
+# create app 
 django-admin startproject goodreads .
 check the app default page 
 python manage.py runserver
@@ -66,7 +66,8 @@ python manage.py startapp goodreadsApp
 `rest_framework`
 
 # then we can start build the models, serializer, views and urls
-`python manage.py makemigrations goodreads`
+`python manage.py makemigrations goodreads` #update database, only need do when you need update model;
+# apply data model
 `python manage.py migrate`
 
 # make this data model visible in admin page 
@@ -89,6 +90,30 @@ node --version
 # here has a lot of packages need to install, you follow along if u are new to reactjs, but we will explain it when we use later. 
 
 # for we will use reactjs bundled.js file in our django app, so below is our setup; 
+created a new app named frontend; 
+npm init -y 
+# install required packages 
+npm i webpack webpack-cli --save-dev 
+# install babel 
+npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
+# install react and react-dom 
+npm i react react-dom --save-dev 
+npm i react-router-dom --save-dev
+
+# install library for build component 
+npm i react-icons 
+# also we will use material UI 
+npm install @mui/material @emotion/react @emotion/styled 
+
+# also u can use shadcn (Beautifully designed components built with Radix UI and Tailwind CSS. ), its a cool component library https://github.com/shadcn-ui/ui
+
+npm i @babel/plugin-proposal-class-properties
+
+# setup babel loader 
+
+# setup webpack file, which is bundle all the js files; 
+
 
 
 
