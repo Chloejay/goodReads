@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework', #DRF, for us to build restful API to communicate with client side react and server side django
     # add your new created app, here we add app we just created named goodreadsApp, check the app from apps.py
     'goodreadsApp.apps.GoodreadsappConfig',
+    'frontend.apps.FrontendConfig',
 ]
 
 REST_FRAMEWORK= {
