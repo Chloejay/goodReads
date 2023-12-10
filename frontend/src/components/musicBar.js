@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function MusicBox() {
-    return (
-        <h1>Todo music component</h1>
-    )
+
+export default function MusicBar() {
+    const [loading, setLoading] = useState(false);
+
+    return (<h1>todo add first music component</h1>)
+
 }
