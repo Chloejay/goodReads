@@ -81,6 +81,16 @@ all good? then we will continue build data model, views and serializers and urls
 
 #### Reactjs setup 
 ```bash 
+# install node 
+https://nodejs.org/en/download 
+node --version 
+
+# npm install packages; 
+# here has a lot of packages need to install, you follow along if u are new to reactjs, but we will explain it when we use later. 
+
+# for we will use reactjs bundled.js file in our django app, so below is our setup; 
+
+
 
 ```
 
