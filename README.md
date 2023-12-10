@@ -92,10 +92,10 @@ node --version
 
 
 
+
 ```
 
-
-
+#### Next workshop
 ###### workshop 2 (share on Jan)
 2. Component (fetch to music api)
 new feature: share button 
