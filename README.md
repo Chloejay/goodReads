@@ -119,6 +119,9 @@ npm i @babel/plugin-proposal-class-properties
 
 # setup webpack file, which is bundle all the js files;>- check the file webpack.config.js
 
+
+# to fetch data, we will use data fetching library SWR, to load the JSON data to client side, I will cover this when we build component; 
+
 ```
 
 #### Next workshop

@@ -10,10 +10,13 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CardActions from '@mui/material/CardActions';
 import IconButton from '@mui/material/IconButton';
+import useSWR from 'swr'
+
 
 
 export default function MusicBar() { // work on the music bar; 
     // music title, singer and lryrics, image
+    // then work on to fetch from music box api; 
     const [loading, setLoading] = useState(false);
     const [expanded, setExpanded] = useState(false);
 
