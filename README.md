@@ -90,9 +90,14 @@ node --version
 # here has a lot of packages need to install, you follow along if u are new to reactjs, but we will explain it when we use later. 
 
 # for we will use reactjs bundled.js file in our django app, so below is our setup; 
-created a new app named frontend; 
+# created a new app named frontend; 
+
+django-admin startapp frontend
+cd frontend 
+# setup a node package; 
 npm init -y 
-# install required packages 
+
+# install required packages
 npm i webpack webpack-cli --save-dev 
 # install babel 
 npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
@@ -104,19 +109,15 @@ npm i react-router-dom --save-dev
 # install library for build component 
 npm i react-icons 
 # also we will use material UI 
-npm install @mui/material @emotion/react @emotion/styled 
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 
 # also u can use shadcn (Beautifully designed components built with Radix UI and Tailwind CSS. ), its a cool component library https://github.com/shadcn-ui/ui
 
 npm i @babel/plugin-proposal-class-properties
 
-# setup babel loader 
+# setup babel loader -< check the file babel.config.json
 
-# setup webpack file, which is bundle all the js files; 
-
-
-
-
+# setup webpack file, which is bundle all the js files;>- check the file webpack.config.js
 
 ```
 

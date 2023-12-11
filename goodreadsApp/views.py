@@ -7,8 +7,7 @@ from .models import MusicBox
 
 # Create your views here.
 
-# we create our view for the first component we will build, use DRF 
-# view to write our endpoint; 
+# we create our view(to write our endpoint) for the first component we will build, use DRF; 
 
 
 class MusicBoxView(generics.CreateAPIView):
@@ -16,5 +15,7 @@ class MusicBoxView(generics.CreateAPIView):
     serializer_class= MusicBoxSerializer
 
 #  use ListAPI; retrieve; 
+class MusicBoxListView(generics.ListAPIView):
+    pass 
 
     
