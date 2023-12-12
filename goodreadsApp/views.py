@@ -16,6 +16,7 @@ class MusicBoxView(generics.CreateAPIView):
 
 #  use ListAPI; retrieve; 
 class MusicBoxListView(generics.ListAPIView):
-    pass 
+    queryset= MusicBox.objects.all() 
+    serializer_class= MusicBoxSerializer
 
     
