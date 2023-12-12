@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --mode development --watch",
     "test": "vitest",
-    "build": "webpack --watch"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "Chloe Ji Jie",

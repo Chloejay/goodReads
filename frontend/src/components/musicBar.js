@@ -15,18 +15,13 @@ import useSWR from 'swr';
 const fetcher= (url)=> fetch(url).then((res)=> res.json())
 
 
-export default function MusicBar() { // work on the music bar; 
-    // music title, singer and lryrics, image
-    // then work on to fetch from music box api; 
+export default function MusicBar() { 
     const { data, error, isloading } = useSWR("/api/musicList", fetcher)
     console.log(data);
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
     
     return (
          <>
-         {isloading ? (<h1>Loading</h1>) :
+         {isloading ? (<>null</>) :
             <Card sx={{ maxWidth: 345 }}>
             <CardHeader
                 title= {data[0].title}
